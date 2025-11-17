@@ -1,0 +1,57 @@
+.directivo-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.directivo-container h1 {
+  text-align: center;
+  color: #1976d2;
+  margin-bottom: 25px;
+}
+
+.alumnos-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.alumno-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.alumno-nombre {
+  cursor: pointer;
+  color: #1976d2;
+  font-weight: 600;
+  font-size: 18px;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.alumno-nombre:hover {
+  color: #125aa0;
+}
+
+.respuestas-list {
+  margin-top: 10px;
+  margin-left: 20px;
+  list-style-type: disc;
+  color: #333;
+}
+
+.respuesta-item {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.no-data {
+  font-style: italic;
+  color: #888;
+  margin-top: 10px;
+}

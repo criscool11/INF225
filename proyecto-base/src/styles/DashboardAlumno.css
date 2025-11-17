@@ -1,0 +1,328 @@
+.dashboard-alumno {
+  max-width: 800px;
+  width: 100%;
+  background: #fff; 
+  padding: 30px 40px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.dashboard-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 15px;
+  background: #f0f2f5; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+
+.btn-logout {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 0.15);
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.btn-logout:hover {
+  background-color: #b91c1c;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1e3a8a;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.descripcion {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.lista-ensayos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ensayo-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.ensayo-item:hover {
+  box-shadow: 0 6px 18px rgb(0 0 0 / 0.1);
+}
+
+.ensayo-item h3 {
+  margin: 0 0 8px 0;
+  color: #2563eb;
+}
+
+.ensayo-item p {
+  margin: 0;
+  color: #666;
+  max-width: 400px;
+  font-size: 0.9rem;
+}
+
+.btn-resolver {
+  background: #2563eb;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.btn-resolver:hover {
+  background: #1e40af;
+}
+
+.pregunta-alumno {
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 18px 22px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.07);
+}
+
+.enunciado {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  color: #1e293b;
+}
+
+.textarea-respuesta {
+  width: 100%;
+  min-height: 90px;
+  border-radius: 8px;
+  border: 1.8px solid #cbd5e1;
+  padding: 12px 15px;
+  font-size: 1rem;
+  resize: vertical;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.textarea-respuesta:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+.opciones-multiple {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.opcion-label {
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #334155;
+  user-select: none;
+}
+
+.opcion-label input[type='radio'] {
+  margin-right: 10px;
+  accent-color: #2563eb;
+  cursor: pointer;
+}
+
+.botones-ensayo {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.btn-enviar {
+  background-color: #bbf7d0;
+  color: #065f46;           
+  border: none;
+  padding: 8px 20px;        
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #86efac;
+}
+
+.btn-cancelar {
+  background-color: #fca5a5; 
+  color: #333;
+  border: none;
+  padding: 8px 20px; 
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cancelar:hover {
+  background-color: #f87171;
+}
+
+.mensaje-error {
+  color: #dc2626;
+  font-weight: 600;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.mensaje-envio {
+  margin-top: 20px;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: #059669;
+}
+
+.mensaje-vacio {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #6b7280;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-resuelto {
+  background-color: #999;
+  cursor: pointer;
+}
+
+.comparacion-lista {
+  list-style: none;
+  padding-left: 0;
+}
+
+.comparacion-item {
+  background: #f9f9f9;
+  border-left: 4px solid #ccc;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.resumen-respuestas {
+  list-style: none;
+  padding: 0;
+}
+
+.respuesta-correcta {
+  background-color: #d4edda;
+  border-left: 5px solid #28a745;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.respuesta-incorrecta {
+  background-color: #f8d7da;
+  border-left: 5px solid #dc3545;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.puntaje-final {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn-volver {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.btn-volver:hover {
+  background-color: #21618c;
+}
+
+.card-practica-libre {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  background: #fff;
+}
+
+.practica-libre-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.practica-libre-row .tema-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.practica-libre-select {
+  min-width: 200px;
+  padding: 6px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #334155;
+}
+
+.btn-practica-libre {
+  margin-left: auto;
+  background: #10b981; 
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.06s ease;
+}
+
+.btn-practica-libre:hover {
+  background: #059669;
+}
+
+.btn-practica-libre:active {
+  transform: translateY(1px);
+}

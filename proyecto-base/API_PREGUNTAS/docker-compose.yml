@@ -1,0 +1,11 @@
+version: "3.4"
+
+services:
+  api_preguntas:
+    image: api_preguntas
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "8080:8080"
+
